@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: example1
+  namespace: argocd
+spec:
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  destinations:
+    - namespace: example1
+      server: 'https://kubernetes.default.svc'
+    - server: 'https://kubernetes.default.svc'
+    - namespace: example2
+      server: 'https://kubernetes.default.svc'
+  orphanedResources:
+    warn: false
+  sourceRepos:
+    - 'git@github.com:kamkie/argocd-examples.git'
+    - 'git@github.com:kamkie/argocd-examples2.git'
+status: {}
