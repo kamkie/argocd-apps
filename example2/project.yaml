@@ -1,5 +1,5 @@
-kind: Project
-apiVersion: project.openshift.io/v1
+kind: Namespace
+apiVersion: v1
 metadata:
   name: example2
   annotations:
@@ -12,4 +12,3 @@ metadata:
 spec:
   finalizers:
     - kubernetes
-
