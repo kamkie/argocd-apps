@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: example2
     server: 'https://kubernetes.default.svc'
-  project: example1
+  project: default
   source:
     directory:
       jsonnet: {}
