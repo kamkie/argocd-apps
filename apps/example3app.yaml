@@ -13,7 +13,7 @@ spec:
       jsonnet: {}
       recurse: true
     path: .
-    repoURL: 'git@github.com:kamkie/argocd-examples2.git'
+    repoURL: 'https://github.com/kamkie/argocd-examples2.git'
     targetRevision: HEAD
   syncPolicy:
     automated: {}
